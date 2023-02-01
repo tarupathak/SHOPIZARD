@@ -1,15 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const navbar = () => {
   return (
     <nav>
         <ul id="left">
-            <li><a>Shopify</a></li>
+            <li><Link to="/">Shopify</Link></li>
         </ul>
         <ul id="right">
-            <li><a href="">
+            <li><Link to="cart">
             <span id="shoppingCart"><i class="fas fa-cart-plus"></i><span id="cartCount">0</span></span>
-            </a></li>
+            </Link></li>
         </ul>
     </nav>
   )

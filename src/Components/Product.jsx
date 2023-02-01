@@ -1,10 +1,13 @@
 import React, { useContext } from "react";
 import { ProductsContext } from "../Global/Products.jsx";
+import Header from "./Header";
 
 const Product = () => {
   const { products } = useContext(ProductsContext);
 
   return (
+    <div className="container">
+    <Header />
     <div id="products">
       {products.map((product) => (
         <div id="product" key={product.id}>
@@ -19,7 +22,9 @@ const Product = () => {
           {product.status == 'hot'? <div className="hot"></div>: ''}
           {product.status == 'new'? <div className="new"></div>: ''}
         </div>
+        
       ))}
+    </div>
     </div>
   );
 };

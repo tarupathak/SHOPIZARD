@@ -171,5 +171,15 @@ header{
     color:#85586F;
 }
 
+/* Not Found */
+
+#not_found{
+    margin-top: 100px;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 40vh;
+    color: #85586F;
+}
+
 
 

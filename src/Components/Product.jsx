@@ -26,9 +26,7 @@ const Product = () => {
             </div>
 
             <div id="add_to_cart" onClick={() => dispatch({type: 'ADD_TO_CART', id: product.id, product})}>Add to Cart</div>
-            {products.status === "hot" ? <div className="hot"></div> : ""}
-            {products.status === "new" ? <div clasName="new"></div> : ""}
-          </div>
+           </div>
       ))}
     </div>
     </div>

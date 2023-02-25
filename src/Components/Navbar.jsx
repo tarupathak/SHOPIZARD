@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 
 const navbar = () => {
   return (
     <nav>
         <ul id="left">
-            <li><Link to="/">Shopify</Link></li>
+            <li><Link to="/">SHOPIZARD</Link></li>
         </ul>
         <ul id="right">
             <li><Link to="cart">

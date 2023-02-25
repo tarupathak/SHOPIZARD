@@ -1,41 +1,39 @@
-@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Manrope&display=swap');
 
 *{
-    margin: 0;
+    margin:0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --mainColor: #85586F;
-    --cremecolor: #F8EDE3;
-    --color: #DFD3C3;
-    --lightbrown: #D0B8A8;
+body{
+    font-family: 'Manrope';
 }
 
 nav{
+
+    z-index: 2;
     width: 100%;
     height: 70px;
     line-height: 70px;
     padding: 0 100px;
-    box-shadow: 0 1px 3px rgba(0,0,0,.1);
-    background-color: #85586F;
+    box-shadow: 0 1px  3px rgba(0,0,.1,.4);
     display: flex;
-    position:fixed;
-    top:0;
+    position: fixed;
+    top: 0;
+    background: white;
 }
 
 #left{
     text-align: left;
     width: 50%;
+    font-family: 'Garamond';
+    font-size: 4vh;
+    font-weight: 600;
+
 }
 
-#left a{
-    font-weight: 700;
-    color: #F8EDE3;
-    font-size: 35px;
-    font-family: 'Kaushan Script';
-}
+
 
 #right{
     text-align: right;
@@ -43,66 +41,66 @@ nav{
 }
 
 nav ul{
-    list-style: none;
+    list-style-type: none;
 }
 
 nav ul a{
     text-decoration: none;
 }
 
-#shoppingCart i{
-    font-size: 30px;
+#shoppingCart i {
+    font-size: 20px;
     display: inline-block;
-    color: #F8EDE3;
-    margin-right: 15px;
-    margin-top: 8px;
+    color: #674188;
+    margin-right: 20px;
 }
 
 #cartCount{
-    display: inline-block;
+    display : inline-block;
     width: 35px;
     height: 35px;
-    background: #F8EDE3;
-    color:#85586F;
+    background-color: #674188;
+    color: white;
     border-radius: 50%;
     line-height: 35px;
     text-align: center;
     font-size: 12px;
 }
 
-header{
+/* Main Photo */
+
+.container{
     width: 100%;
-    background: url("../src/Photos/pexels-tembela-bohle-1884581.jpg");
-    height: 300px;
+    padding: 0;
+  
+}
+
+header {
+    width: 100%;
+    background: url("./Images/MainPhoto.jpg");
+    height: 400px;
     margin-top: 70px;
     background-size: cover;
     background-repeat: no-repeat;
-    /* display:flex;
-    align-items:center;
-    justify-content: center; */
-    color:#F8EDE3;
+    display: flex;
+    align-items: center;
+    color: #674188;
+
 }
 
-#container{
-    width:100%;
-    padding: 0 100px;
-}
 
 #headerText{
-    background: rgba(0,0,0,.5);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    font-family: 'kaushan Script';
+    margin-left: 10vw;
+    font-weight: 600;
+    font-size: larger;
 }
 
-/* Products */
+/* Product Styling */
+
 #products{
-    display: flex;
-    width: 100%;
+    display:flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 #product{
@@ -113,73 +111,84 @@ header{
     position: relative;
 }
 
-#product_img{
-    width: 100%;
-    height: 200px;
-    overflow : hidden;
+.hot{
+    position: absolute;
+    top: 0;
+    background-color: yellowgreen;
+    padding: 5px 20px;
+    color: black;
 }
 
-#product_img img{
-    width: 100%;
-    height: 200px;
+.new{
+    position: absolute;
+    top: 0;
+    background-color: orangered;
+    padding: 5px 20px;
+    color: black;
 }
 
-#product-details {
+
+
+#pro_img{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+#pro_img img{
+    width: 100%;
+}
+
+#pro_details{
     padding: 15px 10px;
     text-align: center;
-    background: #DFD3C3;
-    border-left: 1px solid #85586F;
-    border-right: 1px solid #85586F;
+    background: white;
+    border-left: 1px solid #fafafa;
+    border-right: 1px solid #fafafa;
 }
 
-#product_name{
+#pro_name{
+    font-size: 4vh;
     font-weight: 500;
-    font-size: 20px;
     margin: 12px 0;
+    color: #674188;
+    font-family: 'Garamond';
 }
 
-#product-price{
+#pro_price{
     font-size: 20px;
     font-weight: 300;
-    margin: 12px 0;
+    margin: 17px 0;
 }
 
-#add_cart{
-    background-color: #85586F;
+#add_to_cart{
+    background: #674188;
     padding: 10px 20px;
-    width: 100%;
-    color:#F8EDE3;
+    border-radius: 5vw;
+    color: white;
     text-transform: uppercase;
     text-align: center;
     font-size: 14px;
     cursor: pointer;
 }
 
-.hot{
-    position: absolute;
-    top: 0;
-    background-color: #85586F;
-    padding: 20px 22px;
-    color:#D0B8A8;
+#head{
+    text-align: center;
+    font-family: 'Garamond';
+    color: #674188;
+    font-size: 4vh;
+    font-weight: 600;
 }
 
-.new{
-    position: absolute;
-    top: 0;
-    background-color: #F8EDE3;
-    padding: 20px 22px;
-    color:#85586F;
-}
-
-/* Not Found */
 
 #not_found{
     margin-top: 100px;
-    font-size: 50px;
-    text-align: center;
-    margin-top: 40vh;
-    color: #85586F;
+    
 }
 
-
-
+#not_found{
+    color: #674188;
+    text-align: center;
+    font-size: 6vh;
+    margin-top: 40vh;
+}

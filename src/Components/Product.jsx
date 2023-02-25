@@ -1,11 +1,12 @@
 import React, { useContext } from "react";
 import { ProductsContext } from "../Global/ProductsContext.jsx";
 import Header from "./Header";
+import { CartContext } from "../Global/CartContext";
 
 const Product = () => {
   const { products } = useContext(ProductsContext);
- 
-
+  const { dispatch } = useContext(CartContext);
+  
   return (
     <div className="container">
     <Header />
@@ -24,7 +25,7 @@ const Product = () => {
               <div id="pro_price">Rs. {product.price} /-</div>
             </div>
 
-            <div id="add_to_cart">Add to Cart</div>
+            <div id="add_to_cart" onClick={() => dispatch({type: 'ADD_TO_CART', id: product.id, product})}>Add to Cart</div>
             {products.status === "hot" ? <div className="hot"></div> : ""}
             {products.status === "new" ? <div clasName="new"></div> : ""}
           </div>

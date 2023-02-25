@@ -39,9 +39,7 @@ const Cart = () => {
             <div className="items_price">Rs.{totalPrice}/-</div>
           </div>
           <div className="stripe_section">
-              <StripeCheckout stripeKry="pk_test_51MfQYFSG8ddIUAoLd8KLmytQ606jnrleIijDl3veNQst2MIgJB11dGfuF7mLlrZT2TP2GKqV97F5vVszdFmqXnPG00oZisiQkB">
-
-              </StripeCheckout>
+              <StripeCheckout></StripeCheckout>
           </div>
         </div>
       </div> : ''}

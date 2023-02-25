@@ -222,7 +222,7 @@ header {
     width: 80px;
     height: 80px;
     border-radius: 5px;
-    overflow:
+    overflow:hidden;
 }
 
 .cart_image img{

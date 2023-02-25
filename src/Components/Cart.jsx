@@ -20,7 +20,7 @@ const Cart = () => {
                 <span className="cart_product_price">{cart.price}</span>
                 <span className="inc" onClick={() => dispatch({type:'INC', id: cart.id, cart})}><i className="fas fa-plus"></i></span>
                 <span className="product_quantity">{cart.qty}</span>
-                <span classname="dec" onClick={()=> dispatch({type:'DEC', id: cart.id, cart})}><i className="fas fa-minus"></i></span>
+                <span className="dec" onClick={()=> dispatch({type:'DEC', id: cart.id, cart})}><i className="fas fa-minus"></i></span>
                 <span className="product_total_price">Rs.{cart.price * cart.qty}/-</span>
                 <span className="delete_product" onClick={() => dispatch({type: 'DELETE', id: cart.id, cart})}><i className="fas fa-trash-alt"></i></span>
               </div>
